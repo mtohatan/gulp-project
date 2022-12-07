@@ -1,0 +1,11 @@
+<script type="text/javascript">
+function submitAsPost(url) {
+    var postForm = document.createElement('form');
+    postForm.action = url;
+    postForm.method = 'post';
+    var bodyTag = document.getElementsByTagName('body')[0];
+    bodyTag.appendChild(postForm);
+    postForm.submit();
+}
+</script>
+<a href="THE LINK URL HERE" onclick="submitAsPost(this.href); return false;">THE LINK TEXT</a>
